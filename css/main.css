@@ -47,6 +47,18 @@
 .katex-display .katex {
   font-size: 1.21em !important;
 }
+h1,
+h2,
+h3,
+h4,
+details summary {
+  font-family: "LXGW Wenkai", "PingFang SC", "HarmonyOS Sans SC", system-ui, -apple-system, "Microsoft Yahei", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif !important;
+}
+code:not([class]) {
+  font-size: 0.8125rem;
+  padding: 4px;
+  background: var(--block-hover) !important;
+}
 :root {
   --theme-link: #51a8e1;
   --theme-color: #51a8e1;
@@ -3768,10 +3780,10 @@ details.folding {
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 12px;
-  background: var(--theme-block);
   border: 1px solid var(--theme-border);
 }
 details.folding summary {
+  background: var(--theme-block);
   cursor: pointer;
   padding: 1rem;
   margin: -1rem;
@@ -3796,9 +3808,6 @@ details.folding summary > h6 {
   display: inline;
   border-bottom: none !important;
 }
-details.folding summary:hover {
-  color: var(--text);
-}
 details.folding summary:after {
   position: absolute;
   content: '+';
@@ -3810,14 +3819,14 @@ details.folding summary:after {
 }
 details.folding[open] >summary {
   color: var(--text-p1);
-  font-weight: 700;
+  font-weight: 500;
   z-index: 1;
 }
 details.folding[open] >summary:after {
   content: '-';
 }
 details.folding[open] >div.body {
-  padding: 0 1rem 1rem;
+  padding: 1rem;
   margin: 0 -1rem -1rem;
   color: var(--text-p1);
   --fsp: calc(17px - 1px);
