@@ -211,7 +211,7 @@
   filter: brightness(75%) !important;
 }
 pre {
-  font-family: "Jetbrains Mono", "Fira Code", "Cascadia Code", Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: "Jetbrains Mono", "Fira Code", "Cascadia Code", Menlo, Monaco, Consolas, "PingFang SC", "HarmonyOS Sans SC", system-ui, "Courier New", monospace, sans-serif;
   font-size: 0.8125rem;
   tab-size: 4;
   -moz-tab-size: 4;
@@ -612,7 +612,7 @@ pre:not([class]):has(>code) {
   overflow: hidden;
   background: var(--block);
   line-height: 1.5;
-  font-family: "Jetbrains Mono", "Fira Code", "Cascadia Code", Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: "Jetbrains Mono", "Fira Code", "Cascadia Code", Menlo, Monaco, Consolas, "PingFang SC", "HarmonyOS Sans SC", system-ui, "Courier New", monospace, sans-serif;
   box-sizing: border-box;
 }
 @media screen and (min-width: 500px) {
@@ -719,7 +719,7 @@ pre:not([class]):has(>code) {
 }
 .md-text .gist .blob-code-inner {
   color: var(--text-p1);
-  font-family: "Jetbrains Mono", "Fira Code", "Cascadia Code", Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
+  font-family: "Jetbrains Mono", "Fira Code", "Cascadia Code", Menlo, Monaco, Consolas, "PingFang SC", "HarmonyOS Sans SC", system-ui, "Courier New", monospace, sans-serif;
 }
 .md-text .gist .gist-meta {
   background: var(--block-border);
