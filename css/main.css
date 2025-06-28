@@ -51,13 +51,15 @@ h1,
 h2,
 h3,
 h4,
-details summary {
-  font-family: "LXGW Wenkai", "PingFang SC", "HarmonyOS Sans SC", system-ui, -apple-system, "Microsoft Yahei", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif !important;
+details summary,
+.cover-info,
+.cover-title {
+  font-family: "LXGW Wenkai Screen", "LXGW Wenkai", "PingFang SC", "HarmonyOS Sans SC", system-ui, -apple-system, "Microsoft Yahei", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif !important;
 }
 code:not([class]) {
   font-size: 0.8125rem;
   padding: 4px;
-  background: var(--block-hover) !important;
+  background: var(--block-hover) !important #a332dc;
 }
 :root {
   --theme-link: #51a8e1;
@@ -69,7 +71,7 @@ code:not([class]) {
   --dynamic-color: hsla(var(--hue), var(--sat), var(--light), 1);
 }
 :root[data-theme="light"] {
-  --site-bg: #f9fafb;
+  --site-bg: #f6f7fd;
   --card: #fff;
   --block: #f1f2f3;
   --block-border: #e3e5e8;
@@ -102,7 +104,7 @@ code:not([class]) {
   --text-code: #14181f;
 }
 :root[data-theme="dark"] {
-  --site-bg: #1c1e21;
+  --site-bg: #151829;
   --card: #373d43;
   --block: #26292c;
   --block-border: #383d42;
@@ -140,7 +142,7 @@ code:not([class]) {
   }
 }
 :root:not([data-theme]) {
-  --site-bg: #f9fafb;
+  --site-bg: #f6f7fd;
   --card: #fff;
   --block: #f1f2f3;
   --block-border: #e3e5e8;
@@ -174,7 +176,7 @@ code:not([class]) {
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --site-bg: #1c1e21;
+    --site-bg: #151829;
     --card: #373d43;
     --block: #26292c;
     --block-border: #383d42;
@@ -281,7 +283,7 @@ table:not([class]) tr:hover {
   background: var(--block);
 }
 *[ff=title] {
-  font-family: "LXGW Wenkai", "PingFang SC", "HarmonyOS Sans SC", system-ui, -apple-system, "Microsoft Yahei", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif;
+  font-family: "LXGW Wenkai Screen", "LXGW Wenkai", "PingFang SC", "HarmonyOS Sans SC", system-ui, -apple-system, "Microsoft Yahei", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif;
 }
 blockquote {
   display: block;
@@ -3839,6 +3841,7 @@ details.folding {
 }
 details.folding summary {
   background: var(--theme-block);
+  border-radius: 12px;
   cursor: pointer;
   padding: 1rem;
   margin: -1rem;
