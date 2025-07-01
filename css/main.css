@@ -52,14 +52,13 @@ h2,
 h3,
 h4,
 details summary,
-.cover-info,
-.cover-title {
+.cover-info {
   font-family: "LXGW Wenkai Screen", "LXGW Wenkai", "PingFang SC", "HarmonyOS Sans SC", system-ui, -apple-system, "Microsoft Yahei", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif !important;
 }
 code:not([class]) {
   font-size: 0.8125rem;
   padding: 4px;
-  background: var(--block-hover) !important #a332dc;
+  background: var(--block-hover) !important;
 }
 :root {
   --theme-link: #51a8e1;
