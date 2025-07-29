@@ -4304,9 +4304,6 @@ details.folding[child=iframe] >div.body {
   -webkit-transition: transform 0.5s ease-out;
   -o-transition: transform 0.5s ease-out;
 }
-.tag-plugin.gallery .grid-cell:hover >img {
-  transform: scale(1.1);
-}
 .tag-plugin.gallery.grid-box {
   display: grid;
 }
