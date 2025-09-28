@@ -82,6 +82,7 @@ code:not([class]) {
   --alpha20: rgba(255,255,255,0.2);
   --alpha50: rgba(255,255,255,0.5);
   --alpha60: rgba(255,255,255,0.6);
+  --alpha70: rgba(255,255,255,0.7);
   --alpha75: rgba(255,255,255,0.75);
   --alpha100: #fff;
   --chat-bg: #f1f2f5;
@@ -153,6 +154,7 @@ code:not([class]) {
   --alpha20: rgba(255,255,255,0.2);
   --alpha50: rgba(255,255,255,0.5);
   --alpha60: rgba(255,255,255,0.6);
+  --alpha70: rgba(255,255,255,0.7);
   --alpha75: rgba(255,255,255,0.75);
   --alpha100: #fff;
   --chat-bg: #f1f2f5;
@@ -6361,7 +6363,8 @@ details.toc[open] >div.body section .header+.doc_tree {
 .l_left {
   background-position: centerAdd commentMore actions;
   background-size: cover;
-  background-image: linear-gradient(70deg, #fed3cf, #c5f2ec);
+  background-image: url("https://pic1.imgdb.cn/item/68d751ffc5157e1a88395a97.jpg");
+  background-position: center;
 }
 .l_left .leftbar-container {
   height: 100%;
@@ -6369,8 +6372,8 @@ details.toc[open] >div.body section .header+.doc_tree {
   flex-direction: column;
   word-break: break-all;
   text-align: justify;
-  --blur-px: 100px;
-  --blur-bg: var(--alpha60);
+  --blur-px: 0px;
+  --blur-bg: var(--alpha70);
 }
 @supports ((-webkit-backdrop-filter: blur(var(--blur-px))) or (backdrop-filter: blur(var(--blur-px)))) {
   .l_left .leftbar-container {
