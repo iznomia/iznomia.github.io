@@ -3356,9 +3356,6 @@ a.tag-plugin.button:hover {
   --theme-block: #fddbd8;
   --theme-mark: #fca29c;
   --theme-codeblock: #f9edec;
-  --text: #3f1512;
-  --text-p1: #4f1b17;
-  --text-p2: #740e06;
 }
 .colorful[color='orange'] {
   --theme: #fa6400;
@@ -3366,9 +3363,6 @@ a.tag-plugin.button:hover {
   --theme-block: #fde7d8;
   --theme-mark: #fcc29c;
   --theme-codeblock: #f9f1ec;
-  --text: #3f2412;
-  --text-p1: #4f2d17;
-  --text-p2: #743206;
 }
 .colorful[color='amber'] {
   --theme: #ffbd2b;
@@ -3376,9 +3370,6 @@ a.tag-plugin.button:hover {
   --theme-block: #fdf2d8;
   --theme-mark: #fcde9c;
   --theme-codeblock: #f9f5ec;
-  --text: #3f3112;
-  --text-p1: #4f3e17;
-  --text-p2: #745206;
 }
 .colorful[color='yellow'] {
   --theme: #f2e03d;
@@ -3386,9 +3377,6 @@ a.tag-plugin.button:hover {
   --theme-block: #fdf9d8;
   --theme-mark: #fcf39c;
   --theme-codeblock: #f9f7ec;
-  --text: #3f3b12;
-  --text-p1: #4f4917;
-  --text-p2: #746906;
 }
 .colorful[color='green'] {
   --theme: #3dc550;
@@ -3396,9 +3384,6 @@ a.tag-plugin.button:hover {
   --theme-block: #d8fddd;
   --theme-mark: #9cfca9;
   --theme-codeblock: #ecf9ee;
-  --text: #123f19;
-  --text-p1: #174f1f;
-  --text-p2: #067416;
 }
 .colorful[color='cyan'] {
   --theme: #1bcdfc;
@@ -3406,9 +3391,6 @@ a.tag-plugin.button:hover {
   --theme-block: #d8f5fd;
   --theme-mark: #9ce8fc;
   --theme-codeblock: #ecf6f9;
-  --text: #12363f;
-  --text-p1: #17434f;
-  --text-p2: #065d74;
 }
 .colorful[color='blue'] {
   --theme: #2196f3;
@@ -3416,9 +3398,6 @@ a.tag-plugin.button:hover {
   --theme-block: #d8edfd;
   --theme-mark: #9cd2fc;
   --theme-codeblock: #ecf3f9;
-  --text: #122b3f;
-  --text-p1: #17364f;
-  --text-p2: #064374;
 }
 .colorful[color='purple'] {
   --theme: #9c27b0;
@@ -3426,9 +3405,6 @@ a.tag-plugin.button:hover {
   --theme-block: #f8d8fd;
   --theme-mark: #ee9cfc;
   --theme-codeblock: #f7ecf9;
-  --text: #39123f;
-  --text-p1: #47174f;
-  --text-p2: #640674;
 }
 .colorful[color='theme'] {
   --theme: #51a8e1;
@@ -3436,9 +3412,6 @@ a.tag-plugin.button:hover {
   --theme-block: #d8eefd;
   --theme-mark: #9cd6fc;
   --theme-codeblock: #ecf4f9;
-  --text: #122d3f;
-  --text-p1: #17394f;
-  --text-p2: #064974;
 }
 .colorful[color='accent'] {
   --theme: #ff5724;
@@ -3446,9 +3419,6 @@ a.tag-plugin.button:hover {
   --theme-block: #fde1d8;
   --theme-mark: #fcb29c;
   --theme-codeblock: #f9efec;
-  --text: #3f1d12;
-  --text-p1: #4f2417;
-  --text-p2: #742006;
 }
 .colorful[color='light'] {
   --theme-block: #fff;
@@ -3878,7 +3848,18 @@ details.folding summary:after {
   right: 1rem;
   line-height: 1;
 }
+details.folding {
+  transition: all 0.28s;
+}
+details.folding>div.body {
+  transition: all 0.3s;
+}
+details.folding[open]>div.body {
+  transition: all 0.3s;
+}
 details.folding[open] >summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   color: var(--text-p1);
   font-weight: 500;
   z-index: 1;

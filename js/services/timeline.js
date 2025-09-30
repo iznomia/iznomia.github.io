@@ -65,9 +65,11 @@ utils.jq(() => {
             if (item.labels) {
               item.labels.forEach((label, i) => {
                 if (!query || !query.includes(encodeURI(label.name))) {
-                  cell += '<div class="item label ' + label.name + '" style="background:#' + label.color + '18;border-color:#' + label.color + '36">';
-                  cell += '<span>' + label.name + '</span>';
-                  cell += '</div>';
+                  if (label.name != "timeline") {
+                    cell += '<div class="item label ' + label.name + '" style="background:#' + label.color + '18;border-color:#' + label.color + '36">';
+                    cell += '<span>' + label.name + '</span>';
+                    cell += '</div>';
+                  }
                 }
               });
             } else if (item.zipball_url) {
