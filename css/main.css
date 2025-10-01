@@ -6013,7 +6013,6 @@ details.toc[open] >div.body section .header+.doc_tree {
   display: block;
   flex-shrink: 0;
   overflow: visible;
-  z-index: 100;
   margin-right: 1rem;
 }
 .logo-wrap a.avatar img.bg {
@@ -6022,7 +6021,6 @@ details.toc[open] >div.body section .header+.doc_tree {
   max-width: 200%;
   max-height: 200%;
   height: 80px;
-  z-index: 10000;
   position: absolute;
   overflow: visible;
   display: flex;
