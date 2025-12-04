@@ -46,6 +46,8 @@
 }
 .katex-display .katex {
   font-size: 1.21em !important;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 h1,
 h2,
