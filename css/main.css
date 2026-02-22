@@ -54,7 +54,7 @@ h2,
 h3,
 h4,
 details summary,
-.cover-info,
+.cover-info .headline,
 .cover-title,
 .quot {
   font-family: "LXGW Wenkai", "LXGW Wenkai Screen", "PingFang SC", system-ui, -apple-system, "Microsoft Yahei", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif !important;
