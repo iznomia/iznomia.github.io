@@ -41,29 +41,6 @@
   margin-top: 2.4rem;
   margin-bottom: 2.4rem;
 }
-.katex {
-  font-size: 1.1em !important;
-}
-.katex-display .katex {
-  font-size: 1.15em !important;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-h1,
-h2,
-h3,
-h4,
-details summary,
-.cover-info .headline,
-.cover-title,
-.quot {
-  font-family: "LXGW Wenkai", "LXGW Wenkai Screen", "PingFang SC", system-ui, -apple-system, "Microsoft Yahei", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif !important;
-}
-code:not([class]) {
-  font-size: 0.8125rem;
-  padding: 4px;
-  background: var(--block-hover) !important;
-}
 :root {
   --theme-link: #51a8e1;
   --theme-color: #51a8e1;
@@ -6080,7 +6057,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .logo-wrap a.title {
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 500;
   color: inherit;
   line-height: 1.2;
   display: block;
@@ -8348,4 +8325,33 @@ a[data-fancybox] {
   z-index: 1;
   margin-right: 1rem;
   border-radius: 8px;
+}
+.katex {
+  font-size: 1.1em !important;
+}
+.katex-display .katex {
+  font-size: 1.15em !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+details summary,
+.cover-info .headline,
+.cover-title,
+.quot {
+  font-family: "LXGW Wenkai", "LXGW Wenkai Screen", "PingFang SC", system-ui, -apple-system, "Microsoft Yahei", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif !important;
+}
+code:not([class]) {
+  font-size: 0.8125rem;
+  padding: 4px;
+  background: var(--block-hover) !important;
+}
+h1 {
+  font-weight: 500 !important;
+}
+h3 {
+  font-weight: 500;
 }
