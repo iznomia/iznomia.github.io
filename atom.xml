@@ -10,27 +10,7 @@
   <rights>All rights reserved 2026, james1BadCreeper</rights>
   <subtitle>而我行走于世界的边缘 | Made with ❤️ by iznomia</subtitle>
   <title>iznomia</title>
-  <updated>2026-08-26T00:00:00.000Z</updated>
-  <entry>
-    <author>
-      <name>james1BadCreeper</name>
-    </author>
-    <category term="算法竞赛" scheme="https://iznomia.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
-    <category term="训练" scheme="https://iznomia.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/%E8%AE%AD%E7%BB%83/"/>
-    <category term="算法竞赛" scheme="https://iznomia.com/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
-    <content>
-      <![CDATA[<h2 id="28-qoj14708-Crossing-River">28 qoj14708 Crossing River</h2><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(i,j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mopen">(</span><span class="mord mathnormal">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0572em;">j</span><span class="mclose">)</span></span></span></span> 代表运送了两边的前多少个人的最小时间，但是状态数不太能优化。</p><p>当已知最终时间时，直接倒着检查是非常容易的，因为所有人都可以送。于是直接二分 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span> 检查即可。</p>]]>
-    </content>
-    <id>https://iznomia.com/posts/7995d262/</id>
-    <link href="https://iznomia.com/posts/7995d262/"/>
-    <published>2026-08-26T00:00:00.000Z</published>
-    <summary>
-      <![CDATA[<h2 id="28-qoj14708-Crossing-River">28 qoj14708 Crossing River</h2>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://ww]]>
-    </summary>
-    <title>2026-08-26(#13)：</title>
-    <updated>2026-08-26T00:00:00.000Z</updated>
-  </entry>
+  <updated>2026-08-04T09:12:20.000Z</updated>
   <entry>
     <author>
       <name>james1BadCreeper</name>
@@ -388,5 +368,24 @@
     </summary>
     <title>2025-10-05(#5)：不死的太阳耀斑</title>
     <updated>2025-10-05T00:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>james1BadCreeper</name>
+    </author>
+    <category term="算法竞赛" scheme="https://iznomia.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <category term="训练" scheme="https://iznomia.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/%E8%AE%AD%E7%BB%83/"/>
+    <category term="算法竞赛" scheme="https://iznomia.com/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <content>
+      <![CDATA[<p>JYOCHO —— 互いの宇宙</p><span id="more"></span><p>国庆会多更新一点，但是我还没做线性代数的标准化作业。</p><p>trio <a href="https://qoj.ac/contest/1480">https://qoj.ac/contest/1480</a>，红了。</p><h2 id="J-Middle-Race">J. Middle Race</h2><p>假交互其实猜对了，但问题是我暴力写挂了。</p><p>但为什么会想着去硬解不等式啊。</p><p><img src="https://pic1.imgdb.cn/item/68dce3d2c5157e1a884c4eb1.png" alt=""></p><p>就是你要选的尽可能接近 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo>+</mo><mi>C</mi><mo stretchy="false">)</mo><mo>÷</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n(A+B+C)\div 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">n</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">÷</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span>，然后直接枚举就行了。</p><h2 id="D-Gambler’s-Ruin">D. Gambler’s Ruin</h2><h2 id="L-Por-Una-Cabeza">L. Por Una Cabeza</h2><hr><p>trio <a href="https://qoj.ac/contest/1236">https://qoj.ac/contest/1236</a>，绿了。</p><h2 id="A-Oops-It’s-Yesterday-Twice-More">A. Oops, It’s Yesterday Twice More</h2><h2 id="D-Paimon-Sorting">D. Paimon Sorting</h2><h2 id="H-Crystalfly">H. Crystalfly</h2><h2 id="I-Cloud-Retainer’s-Game">I. Cloud Retainer’s Game</h2><h2 id="L-Secret-of-Tianqiu-Valley">L. Secret of Tianqiu Valley</h2><h2 id="M-Windblume-Festival">M. Windblume Festival</h2><h2 id="K-Ancient-Magic-Circle-in-Teyvat">K. Ancient Magic Circle in Teyvat</h2><p>大无语题。</p><hr><p>休息很久了，来打 CF！希望能上分！<a href="https://codeforces.com/contest/2152">https://codeforces.com/contest/2152</a></p><p>妈的破防了。</p><h2 id="E-Monotone-Subsequence">E. Monotone Subsequence</h2><h2 id="F-Triple-Attack">F. Triple Attack</h2><h2 id="G-Query-Jungle">G. Query Jungle</h2>]]>
+    </content>
+    <id>https://iznomia.com/posts/b060879/</id>
+    <link href="https://iznomia.com/posts/b060879/"/>
+    <published>2025-09-30T00:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>JYOCHO —— 互いの宇宙</p>]]>
+    </summary>
+    <title>2025-09-30(#4)：我却以为 终有一日 能回想起来</title>
+    <updated>2025-09-30T00:00:00.000Z</updated>
   </entry>
 </feed>
