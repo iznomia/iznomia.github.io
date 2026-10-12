@@ -10,7 +10,26 @@
   <rights>All rights reserved 2026, james1BadCreeper</rights>
   <subtitle>而我行走于世界的边缘 | Made with ❤️ by iznomia</subtitle>
   <title>iznomia</title>
-  <updated>2026-09-25T00:00:00.000Z</updated>
+  <updated>2026-10-10T00:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>james1BadCreeper</name>
+    </author>
+    <category term="算法竞赛" scheme="https://iznomia.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <category term="训练" scheme="https://iznomia.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/%E8%AE%AD%E7%BB%83/"/>
+    <category term="算法竞赛" scheme="https://iznomia.com/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <content>
+      <![CDATA[<p>Cre-SC3NT —— Devotion</p><span id="more"></span><h2 id="39-CCPC-2024-重庆-乘积，欧拉函数，求和">39 [CCPC 2024 重庆] 乘积，欧拉函数，求和</h2><p>典完了。</p><p>小的质因子直接状压，这样扔一个数进去可以直接统计贡献。</p><p>然后 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo><mn>53</mn></mrow><annotation encoding="application/x-tex">\ge 53</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">53</span></span></span></span> 的质因子每个数最多有一个，因此可以按照顺序转移。<a href="https://qoj.ac/submission/3146487">代码</a>。</p><h2 id="40-JSCPC2026-Two-Player-Game">40 [JSCPC2026] Two-Player Game</h2><p>沃日这是啥。</p><p>将所有数排序两两配对，奇数补一个 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>。</p><p>如果任意相邻对都奇偶性相同那么 Insight 炸了，因为 Maya 必定可以操作第八探索者操作的那个 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> 或者 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>（钦定相同数操作最左边）就又会变成 Insight 爆炸的局面。</p><p>否则可以操作最左边的那个对将爆炸的情况交给 Maya。</p><hr><p>duo <a href="https://qoj.ac/contest/1871">ICPC 2024 Kunming</a>。</p><h2 id="41-G-GCD">41 G GCD</h2><p>发现直接同除 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>gcd</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\gcd</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mop"><span style="margin-right:0.0139em;">g</span>cd</span></span></span></span> 对答案没有影响，因此 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>log</mi><mo>⁡</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">2\log a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">lo<span style="margin-right:0.0139em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">a</span></span></span></span> 次操作就可以把 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> 变成 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>，直接暴力即可。</p>]]>
+    </content>
+    <id>https://iznomia.com/posts/9c90360c/</id>
+    <link href="https://iznomia.com/posts/9c90360c/"/>
+    <published>2026-10-10T00:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>Cre-SC3NT —— Devotion</p>]]>
+    </summary>
+    <title>2026-10-10(#16)：被遗弃的信仰</title>
+    <updated>2026-10-10T00:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>james1BadCreeper</name>
@@ -368,24 +387,5 @@
     </summary>
     <title>2025-11-11(#8)：四重性</title>
     <updated>2025-11-11T00:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>james1BadCreeper</name>
-    </author>
-    <category term="算法竞赛" scheme="https://iznomia.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
-    <category term="训练" scheme="https://iznomia.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/%E8%AE%AD%E7%BB%83/"/>
-    <category term="算法竞赛" scheme="https://iznomia.com/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
-    <content>
-      <![CDATA[<p>Onlap —— Burn</p><span id="more"></span><h2 id="4th-ucup-s3-Disjoint-Set-Splitting">[4th ucup s3] Disjoint Set Splitting</h2><p>只能离线做。因此直接假设所有答案都是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>，一条一条将删除的边加回来，看什么时候图是联通的，说明删掉这之前的边都没有问题。</p><h2 id="1-4th-ucup-s3-Christmas-Tree">1 [4th ucup s3] Christmas Tree</h2><p>见 NOI 一轮复习：状态设计。</p><h2 id="Nanjing-Regional-2024-Strips">[Nanjing Regional 2024] Strips</h2><p>简单。</p>]]>
-    </content>
-    <id>https://iznomia.com/posts/a497f773/</id>
-    <link href="https://iznomia.com/posts/a497f773/"/>
-    <published>2025-10-25T00:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>Onlap —— Burn</p>]]>
-    </summary>
-    <title>2025-10-25(#7)：一遍又一遍将它全部燃烧</title>
-    <updated>2025-10-26T00:00:00.000Z</updated>
   </entry>
 </feed>
