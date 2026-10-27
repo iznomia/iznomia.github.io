@@ -10,7 +10,26 @@
   <rights>All rights reserved 2026, james1BadCreeper</rights>
   <subtitle>而我行走于世界的边缘 | Made with ❤️ by iznomia</subtitle>
   <title>iznomia</title>
-  <updated>2026-10-20T00:00:00.000Z</updated>
+  <updated>2026-10-27T00:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>james1BadCreeper</name>
+    </author>
+    <category term="算法竞赛" scheme="https://iznomia.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <category term="训练" scheme="https://iznomia.com/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/%E8%AE%AD%E7%BB%83/"/>
+    <category term="算法竞赛" scheme="https://iznomia.com/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <content>
+      <![CDATA[<p>Mazare / Philip Strand —— Battlecry</p><span id="more"></span><h2 id="Ynoi2012-NOIP2015-充满了希望">[Ynoi2012] NOIP2015 充满了希望</h2><p>为什么有人把单点求值看成了区间求和想了一晚上不会做呢。</p><h2 id="46-IOI-2022-囚徒挑战">46 [IOI 2022] 囚徒挑战</h2><p>想了一会儿意识到：<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>500</mn></mrow><annotation encoding="application/x-tex">500</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">500</span></span></span></span> 个囚犯是假的。</p><p>按照进制拆位，一开始二进制，分成每位用两个代表数当前位是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mi mathvariant="normal">/</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">0/1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0/1</span></span></span></span> 以及看的是 A 还是 B，然后发现后者没用，轮流看就行，三进制的话这个东西能做到 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>24</mn></mrow><annotation encoding="application/x-tex">24</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">24</span></span></span></span>。</p><p>这里有个插曲：我在睡梦中想到一个囚犯有较大的概率去抄上一个囚犯写的数字，觉得很有用，而且这样 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>500</mn></mrow><annotation encoding="application/x-tex">500</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">500</span></span></span></span> 个囚犯就有用了！虽然第二天醒来发现没有用，但是很有意思！接下来的内容是第二天想的。</p><p>最后一次查询是没有用的，因为两个数不相等，一旦查出最小最大就直接结束。</p><p>根据此可以转化到，有一棵线段树，每个节点可以使用 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> 的代价将其分为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">b+2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span> 部分，第一个部分和最后一个部分大小都是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>。因此：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">3</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">    f[i] = <span class="number">1e9</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= i - <span class="number">2</span>; ++j) &#123;</span><br><span class="line">        f[i] = <span class="built_in">min</span>(f[i], f[(i - <span class="number">2</span> + j - <span class="number">1</span>) / j] + j);</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; i &lt;&lt; <span class="string">&#x27; &#x27;</span> &lt;&lt; f[i] &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这里甚至有 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>5588</mn></msub><mo>=</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">f_{5588}=20</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5588</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">20</span></span></span></span>，于是做完了。将转移打印出来，然后根据此建表即可。</p><p>但仔细一想发现多少有点难写。</p>]]>
+    </content>
+    <id>https://iznomia.com/posts/896ee7a6/</id>
+    <link href="https://iznomia.com/posts/896ee7a6/"/>
+    <published>2026-10-27T00:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>Mazare / Philip Strand —— Battlecry</p>]]>
+    </summary>
+    <title>2026-10-27(#18)：A city burned down to ashes</title>
+    <updated>2026-10-27T00:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>james1BadCreeper</name>
@@ -364,28 +383,5 @@
     </summary>
     <title>算法竞赛中的 python（一）</title>
     <updated>2025-12-15T00:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>james1BadCreeper</name>
-    </author>
-    <category term="记录" scheme="https://iznomia.com/categories/%E8%AE%B0%E5%BD%95/"/>
-    <category term="游记" scheme="https://iznomia.com/categories/%E8%AE%B0%E5%BD%95/%E6%B8%B8%E8%AE%B0/"/>
-    <category term="游记" scheme="https://iznomia.com/tags/%E6%B8%B8%E8%AE%B0/"/>
-    <content>
-      <![CDATA[<blockquote><p>你不能总是一直逃避某些事情。</p></blockquote><span id="more"></span><h2 id="总结">总结</h2><p>比赛当天早上感觉扁桃体有些发炎。</p><p>为啥能不会这个 A 呢。</p><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mi>k</mi><mi>log</mi><mo>⁡</mo><mi>m</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2k\log m)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">lo<span style="margin-right:0.0139em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">m</span><span class="mclose">)</span></span></span></span> 真的卡不过这个 E 吗，等 ucup 上了我再研究一下。</p><p>所以还是单核强度最重要。下学期还是多学习一点有用的东西吧，算法竞赛也不能断就是了，感觉会很有挑战性。</p><p>主要影响是没拿到金牌，然后没 EC 去了。有一种没进省队的空虚感。</p><h2 id="NextStage">NextStage</h2><p>第一次参加这种活动，虽然是线上。</p><p>Gram 抬手好帅，削除射线好酷炫。</p><p>第一次知道 TG 是个法师，有点帅的。期待和 Laur 的新曲。</p><p>期待 Ashrount 和打打的新曲。后面那段 kick 太震惊了，太厉害了，真的不是 Myosuke 或者 Gram 吗。</p><div class="tag-plugin image"><div class="image-bg"><img src="https://pic1.imgdb.cn/item/6925522c3203f7be002fe988.png" alt="象征性地放个图" data-fancybox="true"/></div><div class="image-meta"><span class="image-caption center">象征性地放个图</span></div></div><p>ak+q vs onoken，我的天哪。</p><p>我就说 Xterfusion 是个不错的曲子，你看这效果不非常好吗。</p><p>看情况确实想在寒假开始学习乐理了。</p><h2 id="上海旅行">上海旅行</h2><p>赛后晚上打算去外滩看看，但是地铁坐到一般发现自己的感冒其实不是很轻，早上的感觉是对的，赛时只是在硬撑罢了。</p><p>在前往外滩的路上遇到了巧克力博物馆，有巧克力造的东方明珠塔。据我观察墙壁好像也是用巧克力造的（或者只是颜色很像），有点厉害的。</p><div class="tag-plugin image"><div class="image-bg"><img src="https://pic1.imgdb.cn/item/6925524c3203f7be002feb07.jpg" data-fancybox="true" style="width:200px;"/></div></div><p>在外滩使用破烂手机拍照，并未被东方明珠塔攻击。未尝试饮用蜜雪冰城。</p><div class="tag-plugin image"><div class="image-bg"><img src="https://pic1.imgdb.cn/item/6925525d3203f7be002febc4.jpg" data-fancybox="true"/></div></div>]]>
-    </content>
-    <id>https://iznomia.com/posts/f79d0940/</id>
-    <link href="https://iznomia.com/posts/f79d0940/"/>
-    <published>2025-11-24T00:00:00.000Z</published>
-    <summary>
-      <![CDATA[<blockquote>
-<p>你不能总是一直逃避某些事情。</p>
-</blockquote>]]>
-    </summary>
-    <title>
-      <![CDATA[2025 ICPC 上海站 & Arcaea NextStage 线上观感]]>
-    </title>
-    <updated>2025-11-25T00:00:00.000Z</updated>
   </entry>
 </feed>
